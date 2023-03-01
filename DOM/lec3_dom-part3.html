@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part-3</title>
+</head>
+<body>
+    <!-- normal html -->
+    <h1>hello world -namaste</h1>
+    <p id="js"></p>
+    <button onclick="hey()" id="jss">Submit</button>
+
+    <!-- javascript -->
+    <script>
+        // document.addEventListener("click",hello);
+        // document.addEventListener("dblclick",hello);
+        document.addEventListener("mouseenter",hello);
+        function hello()
+        {
+            document.getElementById("js").innerText="Namaste doston";
+        }
+        function hey()
+        {
+            document.getElementById("jss").innerText="Done !you did it";
+            document.getElementById("jss").style.color="white";
+            document.getElementById("jss").style.backgroundColor="blue";
+            document.getElementById("jss").style.padding="10px";
+            document.getElementById("jss").style.border="2px solid black";
+            
+        }
+    </script>
+</body>
+</html>
