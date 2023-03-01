@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part1</title>
+</head>
+<body>
+    <!-- ID -->
+    <p id="one"> <span>Namaste</span> </p>
+    
+    <!-- CLASS -->
+   <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+    
+    <!-- tag name  -->
+    <h3>Hey</h3>
+    <h3>Namaste</h3>
+    <h3>Hola</h3> 
+    
+    <!-- Query Selector -->
+    <h2>hello</h2>
+    <h2 class="class">Hola</h2>
+    <h2 id="ids">hey</h2>
+
+<script>
+        //Id
+        let var1=document.getElementById("one");
+        console.log(var1.innerHTML);   
+        console.log(var1.innerText);
+        
+        // class
+        let var2=document.getElementsByClassName("tech");
+        console.log(var2);
+        console.log(var2[2].innerText);
+        var2[1].innerText="second";
+
+        //tagname
+        let var3= document.getElementsByTagName("h3")
+        console.log(var3[2].innerText);
+        var3[2].innerText="Hello pw skills";
+        var3[2].style.color="red";
+        var3[2].style.fontSize="30px";
+        console.log(var3[2].innerText);
+
+        // Query selector
+        let var4 =document.querySelector(".class");
+        console.log(var4);
+
+           var4.className="hello";
+           var4.classList="hola hey hii";
+           var4.setAttribute("id","js");
+           var4.setAttribute("title","vandan raval");
+    </script>
+</body>
+</html>
