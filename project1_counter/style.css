@@ -1,0 +1,77 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(blue,red);
+}
+.card{
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    box-shadow: 0 0 5px 0px black;
+    padding: 20px;
+    color: black;
+    background-color: coral;
+    
+}
+h2{
+    color: rgb(237, 243, 245);
+    text-decoration: underline;
+    font-size: xx-large;
+}
+button{
+    padding: 12px;
+    border: 1px solid black;
+    font-size: 17px;
+    border-radius: 15px;
+}
+span
+{
+    border: 1px solid black;
+    font-size: 17px;
+    background-color: #f0f0f0;
+    padding: 12px;
+    
+}
+.inputnumber{
+    display: flex;
+    gap: 35px;
+}
+#lbl{
+    background-color: blue;
+    color: white;
+    width: 20px;
+    text-align: center;
+}
+#add{
+    background-color: yellow;
+    color: black;
+}
+#sub{
+    background-color: green;
+    color: white;
+}
+#reset{
+    background-color: red;
+    color: white;
+}
+#add:hover{
+    background-color: white;
+    color: black;
+}
+#sub:hover{
+    background-color: white;
+    color: black;
+}
+#reset:hover{
+    background-color: white;
+    color: black;
+}
+button:hover{
+    scale: 1.1;
+    background-color: transparent;
+}
