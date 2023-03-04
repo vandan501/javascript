@@ -136,7 +136,6 @@ let ans=2*(w+h);
 // console.log("perimeter of rectangle is",ans);
 // perimeter of rectangle is 120
 
-
 // 3. Write a program to demonstrate the results of comparison operators. Note that both the truth and false  condition for each operator must be specified
 
 n1=11;
@@ -150,3 +149,153 @@ console.log(n3==n4);//false
 n5=11;
 n6=11;
 console.log(n5!=n6);//false
+
+n7=11;
+n8=12;
+console.log(n7!=n8);//true
+
+n9=11;
+n10=11;
+console.log(n9>=n10);//true
+
+n9=11;
+n10=11;
+console.log(n9>n10);//false
+
+n9=13;
+n10=11;
+console.log(n9>n10);//true
+
+n5=11;
+n6=11;
+console.log(n5<n6);//false
+
+n5=5;
+n6=11;
+console.log(n5>n6);//false
+
+n5=11;
+n6=11;
+console.log(n5>=n6);//true
+
+n15=11;
+n16=11;
+console.log(n15==n16);//true
+
+n15=11;
+n16="11";
+console.log(n15==n16);//true
+
+n15=11;
+n16="10";
+console.log(n15==n16);//false
+
+
+n15=11;
+n16="11";
+console.log(n15===n16,".....");//false
+
+n15=11;
+n16=11;
+console.log(n15===n16,".....");//true
+ 
+
+n5=11;
+n6=11;
+console.log(n5>=n6);
+
+n5=11;
+n6=11;
+console.log(n5>=n6);
+
+
+n5=11;
+n6=11;
+console.log(n5>=n6);
+
+
+
+
+// output
+true
+false
+false
+true
+true
+false
+true
+false
+false
+true
+true
+true .....
+true
+true
+true
+
+//lets play with conditions and loops
+
+
+//first if... else if..program 
+const signal="green";
+if(signal=="orrange")
+{
+    console.log("drive slow");
+}else if(signal=="red")
+{
+    console.log("please stop");
+
+}else if(signal=="green")
+{
+    console.log("you can go");
+}else{
+    console.log("drive carefully");
+
+}
+//largest of 2 numbers
+
+let num1=26;
+let num2=2;
+const ans=(num1<num2?num1+" is less than "+num2:num1 +" is greater than "+num2);
+console.log(ans);
+
+/*3. Write a program that takes a number as input and outputs "Fizz" if it is divisible by 3, "Buzz" if it is divisible  by 5, and "FizzBuzz" if it is divisible by both 3 and 5. Note that any number can be passed and not restricted to the numbers divisible by 3 or 5*/
+let num=31;
+if(num%3==0 && num%5==0)
+{
+    console.log("FizzBUzz");
+}else if(num%5==0){
+    console.log("Buzz");
+}
+else if(num%3==0){
+    console.log("Fizz");
+}
+else{
+    console.log("Try again");
+}
+
+// switch case
+const day = "Saturday";
+switch (day) {
+    case "Monday":
+        console.log("4 Days to go for weekend");
+        break;
+    case "Tuesday":
+        console.log("3 Days to go for weekend");
+        break;
+    case "Wednesday":
+        console.log("2 Days to go for weekend");
+        break;
+    case "Thursday":
+        console.log("1 Day to go for weekend");
+        break;
+    case "Friday":
+        console.log("0 day to for weekend");
+        break;
+    case "Saturday":
+        case "Sunday":
+        
+        console.log("Finally  Weekend comes");
+        break;
+    default: console.log("Invalid Day");
+}
