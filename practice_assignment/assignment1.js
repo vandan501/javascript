@@ -299,3 +299,58 @@ switch (day) {
         break;
     default: console.log("Invalid Day");
 }
+//another switch case example
+month_num = 11;
+switch (month_num) {
+    case 1: console.log("January");
+        break;
+    case 2: console.log("Febuary");
+        break;
+    case 3: console.log("March");
+        break;
+    case 4: console.log("April");
+        break;
+    case 5: console.log("May");
+        break;
+    case 6: console.log("June");
+        break;
+    case 7: console.log("July");
+        break;
+    case 8: console.log("August");
+        break;
+    case 9: console.log("September");
+        break;
+    case 10: console.log("October");
+        break;
+    case 11: console.log("November");
+        break;
+    case 12: console.log("December");
+        break;
+
+    default: console.log("please check the number again");
+}
+
+//ternary conditions
+number1=0;
+ans=number1==0?"number is equals to 0":number1<0?"Number is negative":"number is positive";
+// condition= condition1?true:false in false condition2?true or false;
+console.log(ans);
+
+
+//loops
+
+num=10;
+for(let i=0;i<=num;i++)
+{
+    if(i%2==0)
+    {
+        console.log(i);
+    }
+}
+output:
+0
+2
+4
+6
+8
+10
