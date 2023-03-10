@@ -1,17 +1,19 @@
-// let 5 = 5;
-let string = "";
-
-for (let i = 1; i <= 5; i++) 
+let n=6;
+for(let i=n;i>=1;i--)
 {
-  // printi5g spaces
-     for (let j = 0; j < 5 - i; j++) 
-        {
-            string += " ";
-        }
-  // printing star
-  for (let k = 0; k < i; k++) {
-    string += "*";
+  let row="";
+  for (let j=1;j<=i;j++)
+  {
+    row=row+'*';
   }
-  string += "\n";
+  console.log(row);
 }
-console.log(string);
+
+
+output:
+******
+*****
+****
+***
+**
+*
