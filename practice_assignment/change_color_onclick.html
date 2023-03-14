@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color change</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 300px;
+            position: relative;
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+        }
+        button:hover{
+            /* position: relative; */
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button id="change">Click here for change background color</button>
+</body>
+</html>
+<script>
+
+const change=document.getElementById("change");
+    
+    const randomColor=()=>
+    {
+        let val="0123456789ABCDE";
+        let cons="#";
+        for (let i=0;i<6;i++)
+        {
+            cons=cons+val[Math.floor(Math.random()*16)];
+        }
+        return cons;
+    };
+    
+    
+    function changeRandomColor()
+    {
+        document.body.style.backgroundColor=randomColor();   
+
+    }
+    change.addEventListener("click",changeRandomColor);
+    
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On button click</title>
+    <style>
+        body{
+            
+            text-align: center;
+            color: white;
+            background-color: blue;
+        }
+        h1{
+            font-size: 56px;
+        }
+        button{
+            color: white;
+            font-size: 20px;
+            background-color: #000;
+            border: 1px solid yellow;
+            padding: 10px;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <h1 id="headerText">THE MOST AFFORDABLE LEARNING PLATFORM</h1>
+  <button id="changeButton" title="click here">Change Header</button>
+ </body>
+</html>
+
+
+<script>
+
+const headerText = document.getElementById("headerText");
+const changeButton = document.getElementById("changeButton");
+
+changeButton.addEventListener("click", () => {
+    if(headerText.textContent === "THE MOST AFFORDABLE LEARNING PLATFORM")
+    {
+        headerText.textContent = "PW SKILLS";
+        // headerText.style.color="yellow";
+        // headerText.style.color="WHITE";
+    }
+    else
+    {
+        headerText.textContent="THE MOST AFFORDABLE LEARNING PLATFORM";
+        // headerText.style.color="yellow";
+    }
+
+});
+
+</script>
