@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do app  </title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            font-size: 20px;
+
+            margin: 0 auto;
+        }
+        button{
+            width: 250px;
+            color: white;
+            background-color: blue;
+            padding: 5px;
+            font-size: 30px;
+            position: relative;
+            left: 650px;
+        }
+        button:hover{
+            width: 250px;
+            color: black;
+            background-color: aqua;
+            padding: 5px;
+            font-size: 30px;
+            position: relative;
+            left: 650px;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="enter tasks" id="task"> <br>
+    <button onclick="todo()">submit</button>
+    <ul id="todo_task"></ul>
+</body>
+</html>
+<script>
+function todo() 
+{
+   var task = document.getElementById("task").value;
+   task.innerText = "";
+if(task.length==0)
+{
+    alert("please write your task first")
+}
+else{
+
+
+
+  var li = document.createElement("li");
+  
+  var text = document.createTextNode(task);
+  li.appendChild(text);
+
+  var taskList = document.getElementById("todo_task");
+  taskList.appendChild(li);
+  taskList.color="white";
+}
+  
+}
+
+</script>
